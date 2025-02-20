@@ -113,28 +113,56 @@ function Layout({ currentPage, onNavigate, children }) {
 // Páginas
 function HomePage() {
   return (
-    <div className="prose max-w-none">
-      <h1 className="text-3xl font-bold mb-6">Bem-vindo ao EcoVoz</h1>
-      <div className="grid md:grid-cols-2 gap-8">
-        <div>
-          <h2 className="text-xl font-semibold mb-4">Sobre o Projeto</h2>
-          <p>
-            O EcoVoz é uma plataforma colaborativa para mapeamento e monitoramento 
-            de áreas verdes urbanas. Através da participação da comunidade, 
-            buscamos criar um banco de dados atualizado e preciso sobre os espaços 
-            verdes em nossa cidade.
-          </p>
-        </div>
-        <div>
-          <h2 className="text-xl font-semibold mb-4">Funcionalidades</h2>
-          <ul className="space-y-2">
-            <li>✓ Mapeamento interativo de áreas verdes</li>
-            <li>✓ Busca e filtros avançados</li>
-            <li>⋯ Análise de dados e estatísticas (Em breve)</li>
-            <li>⋯ Perfis de usuário e gamificação (Em breve)</li>
-            <li>⋯ Relatórios e visualizações (Em breve)</li>
-            <li>⋯ API pública (Em desenvolvimento)</li>
-          </ul>
+    <div 
+      className="min-h-[calc(100vh-16rem)] relative rounded-xl overflow-hidden"
+      style={{
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("https://images.unsplash.com/photo-1533551037358-c8f7182cdb79?auto=format&fit=crop&q=80")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}
+    >
+      <div className="prose max-w-none p-8">
+        <h1 className="text-3xl font-bold mb-6 text-green-800">Bem-vindo ao EcoVoz</h1>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="bg-white/90 p-6 rounded-lg shadow-lg">
+            <h2 className="text-xl font-semibold mb-4 text-green-700">Sobre o Projeto</h2>
+            <p className="text-gray-700">
+              O EcoVoz é uma plataforma colaborativa para mapeamento e monitoramento 
+              de áreas verdes urbanas. Através da participação da comunidade, 
+              buscamos criar um banco de dados atualizado e preciso sobre os espaços 
+              verdes em nossa cidade.
+            </p>
+          </div>
+          <div className="bg-white/90 p-6 rounded-lg shadow-lg">
+            <h2 className="text-xl font-semibold mb-4 text-green-700">Funcionalidades</h2>
+            <ul className="space-y-2 text-gray-700">
+              <li className="flex items-center gap-2">
+                <span className="text-green-600">✓</span>
+                Mapeamento interativo de áreas verdes
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-green-600">✓</span>
+                Busca e filtros avançados
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-gray-400">⋯</span>
+                Análise de dados e estatísticas (Em breve)
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-gray-400">⋯</span>
+                Perfis de usuário e gamificação (Em breve)
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-gray-400">⋯</span>
+                Relatórios e visualizações (Em breve)
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-gray-400">⋯</span>
+                API pública (Em desenvolvimento)
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
