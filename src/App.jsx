@@ -207,7 +207,7 @@ function AboutPage() {
         visite nossa documentação completa no GitHub.
       </p>
       <a 
-        href="https://github.com/seu-usuario/ecovoz" 
+       href="https://github.com/JFWOH/Ecovoz" 
         target="_blank" 
         rel="noopener noreferrer"
         className="inline-block bg-gray-800 text-white px-6 py-2 rounded-lg hover:bg-gray-700 no-underline"
