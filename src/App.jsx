@@ -90,7 +90,7 @@ function Layout({ currentPage, onNavigate, children }) {
               <p className="text-sm">Mapeamento Colaborativo de Áreas Verdes</p>
             </div>
             <div className="flex space-x-4">
-              <a href="https://github.com/seu-usuario/ecovoz" 
+                <a href="https://github.com/JFWOH/Ecovoz"
                  target="_blank" 
                  rel="noopener noreferrer" 
                  className="text-green-100 hover:text-white">
